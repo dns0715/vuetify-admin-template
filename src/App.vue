@@ -31,7 +31,10 @@
         </v-list>
       </v-navigation-drawer>
       <v-main style="height: 250px">
-        <router-view/>
+        <v-container
+         fluid>
+          <router-view/>
+        </v-container>
       </v-main>
     </v-layout>
 </v-app>
@@ -45,6 +48,8 @@ export default {
       {title: 'DashBoard', icon: 'mdi-view-dashboard', to: '/'},
       {title: 'GridSystem', icon: 'mdi-view-dashboard', to: '/grid-system'},
     ];
+    //일반변수를 바인딩시켰더니, 안되어서 ref로 선언함 Vue2에서는 data()에 일반변수도 되던것으로 확인함
+    //반면에 템플릿내에서는 drawer.value로 접근하지않아도 동작함
     const drawer = ref(false);
     return {
       items,

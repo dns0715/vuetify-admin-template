@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <v-container
+   fluid>
     DashBoard
-  </div>
+  </v-container>
 </template>
 
 <script>
