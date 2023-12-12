@@ -1,6 +1,8 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
 import DashBoard from '@/views/DashBoard'
 import GridSystem from '@/views/GridSystem'
+import GridListPage from '@/views/GridListPage'
+
 
 const routes = [
     {
@@ -12,6 +14,11 @@ const routes = [
         path: '/grid-system',
         name: 'GridSystem',
         component: GridSystem,
+    },
+    {
+        path: '/grid-list-page',
+        name: 'GridListPage',
+        component: GridListPage,
     },
 ]
 
